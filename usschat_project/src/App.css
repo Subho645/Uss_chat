@@ -1,0 +1,32 @@
+/* App.css */
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .JoinContainer {
+      width: 80%; /* Adjust width for smaller screens */
+    }
+  
+    input[type="text"] {
+      width: 100%; /* Full width for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .JoinContainer {
+      width: 90%; /* Further adjust width for even smaller screens */
+    }
+  
+    input[type="text"] {
+      font-size: 0.9rem; /* Decrease font size for smaller screens */
+    }
+  }
+  
+  

@@ -1,0 +1,139 @@
+.chatPage {
+    background: linear-gradient(135deg, #2fb6ff, #24dd77);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ .chatBox{
+    overflow-y: auto;
+ } 
+
+
+.chatContainer {
+    background: linear-gradient(135deg, #fc2fff, #c7dd24);
+    height: 60%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Updated */
+    justify-content: space-between; /* Updated */
+    transition: transform .2s;
+}
+
+.chatContainer:hover {
+    transform: scale(1.05);
+}
+
+.header {
+    background-color: #9b59b6;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.header img {
+
+   width: 30px;
+   height: 30px; 
+   transition: all 0.3s;
+   cursor: pointer;
+}
+.header img:hover{
+    transform: scale(1.2);
+}
+/* .header h2{
+    margin: 2.5vmax;
+} */
+.header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.header button:hover {
+    transform: scale(1.1);
+}
+.inputBox {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+#chatInput {
+    padding: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px ;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: calc(100% - 90px); /* Adjusted width */
+    transition: border-color 0.3s ease-in-out;
+}
+
+#chatInput:focus {
+    outline: none;
+    border-color: #007bff; /* Change border color on focus */
+}
+
+.sendBtn {
+    background-color: #007bff; /* Deep blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.sendBtn>img{
+    width: 20px;
+    transition: all 0.3s;
+}
+
+.sendBtn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.sendBtn:hover img{
+    transform: translateX(10px);
+}
+
+@media screen and (max-width: 768px) {
+    .chatContainer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .chatContainer {
+        width: 90%;
+    }
+    
+    .header h1 {
+        font-size: 1.2rem; /* Decrease font size for smaller screens */
+    }
+
+    .header img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #chatInput {
+        width: calc(100% - 70px); /* Adjusted width for smaller screens */
+    }
+}

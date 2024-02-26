@@ -1,0 +1,78 @@
+/* join.css */
+
+.JoinPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2fb6ff, #24dd77); /* Gradient background */
+}
+
+.JoinContainer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent white background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.JoinContainer img {
+  width: 100px;
+  height: auto;
+  animation: blink 1s infinite alternate; /* Blinking animation for the star */
+}
+
+.JoinContainer h1 {
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  color: #fff; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for emphasis */
+  animation: fadeIn 1s ease; /* Fade-in animation */
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 1rem;
+}
+
+/* Button styling */
+.joinbtn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff; /* Button background color */
+  color: #333; /* Button text color */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.joinbtn:hover {
+  background-color: #f3f4f6; /* Button background color on hover */
+}
+
+/* Blinking animation keyframes */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
